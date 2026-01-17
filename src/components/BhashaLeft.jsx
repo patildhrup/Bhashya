@@ -9,7 +9,7 @@ export default function BhashaLeft({ isRightPanelOpen, onToggleRightPanel }) {
             <img
                 src={logo}
                 alt="Bhasha Logo"
-                className="absolute top-6 left-6 h-12 w-auto object-contain"
+                className="absolute top-6 left-6 h-24 w-auto object-contain"
             />
 
             <button
