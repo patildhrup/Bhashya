@@ -1,16 +1,10 @@
 import { PanelRightClose, PanelRightOpen } from "lucide-react";
 import SearchBar from "./SearchBar";
-import logo from "../assets/logo.png";
 
 export default function BhashaLeft({ isRightPanelOpen, onToggleRightPanel }) {
     return (
-        <div className={`${isRightPanelOpen ? "w-[70%]" : "w-full"} h-full bg-[#EAEAEA] p-6 relative flex flex-col justify-end transition-all duration-300 ease-in-out`}>
-            {/* Logo */}
-            <img
-                src={logo}
-                alt="Bhasha Logo"
-                className="absolute top-6 left-6 h-24 w-auto object-contain"
-            />
+        <div className={`flex-1 h-full bg-[#171717] p-6 relative flex flex-col justify-end transition-all duration-300 ease-in-out`}>
+
 
             <button
                 onClick={onToggleRightPanel}
