@@ -3,13 +3,13 @@ import logo from "../assets/logo.png";
 
 export default function BhashaRight() {
     return (
-        <div className="w-20 h-full bg-[#FAD400] flex flex-col justify-between items-center py-6 border-l border-[#333]">
+        <div className="w-20 h-full bg-[#FAD400] flex flex-col justify-between items-center py-6 border-l border-[#333] relative">
             <div className="flex flex-col gap-8 items-center">
                 {/* Logo */}
                 <img
                     src={logo}
                     alt="Bhasha Logo"
-                    className="absolute top-6 left-6 h-24 w-auto object-contain"
+                    className="h-24 w-auto object-contain"
                 />
 
                 {/* Navigation Icons */}
@@ -31,7 +31,7 @@ export default function BhashaRight() {
 
                 {/* User Avatar */}
                 <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-medium text-sm cursor-pointer hover:opacity-90 transition-opacity">
-                    DH
+                    A
                 </div>
             </div>
         </div>
