@@ -1,28 +1,10 @@
 import { Bot, User } from "lucide-react";
 
-export default function BhashaChat() {
-    const dummyMessages = [
-        {
-            id: 1,
-            role: "assistant",
-            content: "Hello! I am BhashaGPT. How can I help you today?"
-        },
-        {
-            id: 2,
-            role: "user",
-            content: "Translate 'Hello' to Hindi."
-        },
-        {
-            id: 3,
-            role: "assistant",
-            content: "Namaste (नमस्ते)"
-        }
-    ];
-
+export default function BhashaChat({ messages }) {
     return (
         <div className="flex-1 w-full overflow-y-auto mb-4 py-10 px-10 custom-scrollbar">
             <div className="flex flex-col gap-6">
-                {dummyMessages.map((msg) => (
+                {messages.map((msg) => (
                     <div
                         key={msg.id}
                         className={`flex gap-4 ${msg.role === "user" ? "flex-row-reverse" : "flex-row"}`}
